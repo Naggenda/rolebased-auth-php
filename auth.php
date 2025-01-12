@@ -24,6 +24,8 @@
         $count = mysqli_num_rows($result);  
           
         if($count == 1){  
+            session_start();
+            $username = $row['username'];
             if($row['role'] == 'admin'){
                 header("location:Admin");
             }
@@ -32,6 +34,7 @@
             }  
         }  
         else{  
-            echo "<h1> Login failed. Invalid email or password.</h1>";  
+            echo "<h1> Login failed. Invalid email or password.</h1>";
+            header("location:index.php");
         }     
 ?>  
