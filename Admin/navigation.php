@@ -47,7 +47,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="../Admin/pages/tables.php">
-                        <span class="nav-link-text ms-1">Tables</span>
+                        <span class="nav-link-text ms-1">Church Members</span>
                     </a>
                 </li>
                 <li class="nav-item">
