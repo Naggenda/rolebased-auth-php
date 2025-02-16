@@ -8,7 +8,7 @@ $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_
 if (mysqli_connect_errno()) {
   exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
-$query = "SELECT * FROM `user`;";
+$query = "SELECT fullname, contact, email, career, gender FROM `member`;";
 $result = mysqli_query($con, $query);
 include "./navigation.php";
 
@@ -21,8 +21,8 @@ include "./navigation.php";
       <div class="col-12">
         <div class="card my-4">
           <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-            <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3 d-flex">
-              <h6 class="text-white text-capitalize ps-3">Authors table</h6>
+            <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3 d-flex justify-content-space-between">
+              <h6 class="text-white text-capitalize ps-3">Church Members</h6>
               <a class="text-white text-capitalize ps-3" href="new.php">Add New Member</a>
             </div>
           </div>
@@ -31,11 +31,16 @@ include "./navigation.php";
               <table class="table align-items-center mb-0">
                 <thead>
                   <tr>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Full Name</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Tel Number</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email
                     </th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                      Proffesion
+                    </th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Gender
+                    </th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action
                     </th>
                     <th class="text-secondary opacity-7"></th>
                   </tr>
@@ -45,16 +50,30 @@ include "./navigation.php";
                   while ($row = mysqli_fetch_assoc($result)) { ?>
                     <tr>
                       <td>
-                        <?php echo $row['id']; ?>
+                        <?php echo $row['fullname']; ?>
+                      </td>
+                      <td>
+                        <?php echo $row['contact']; ?>
                       </td>
                       <td>
                         <?php echo $row['email']; ?>
                       </td>
                       <td>
-                        <?php echo $row['username']; ?>
+                        <?php echo $row['career']; ?>
                       </td>
                       <td>
-                        <?php echo $row['role']; ?>
+                        <?php echo $row['gender']; ?>
+                      </td>
+                      <td>
+                        <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;">
+                          <img style="width: 20px;" src="../../assets/view.png" alt="">
+                        </a>
+                        <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;">
+                          <i class="material-symbols-rounded text-sm me-2">edit</i>
+                        </a>
+                        <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i
+                            class="material-symbols-rounded text-sm me-2">delete</i>
+                        </a>
                       </td>
                     </tr>
                   <?php } ?>

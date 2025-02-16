@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active bg-gradient-dark text-white" href="../Admin/index.php">
+                    <a class="nav-link active text-dark" href="../Admin/index.php">
                         <span class="nav-link-text ms-1">Dashboard</span>
                     </a>
                 </li>
@@ -51,42 +51,29 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="../pages/billing.html">
-                        <span class="nav-link-text ms-1">Billing</span>
+                    <a class="nav-link text-dark" href="../Admin/pages/attendance.php">
+                        <span class="nav-link-text ms-1">Attendance</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="../pages/virtual-reality.html">
-                        <span class="nav-link-text ms-1">Virtual Reality</span>
+                    <a class="nav-link text-dark" href="../Admin/pages/ministers.php">
+                        <span class="nav-link-text ms-1">Ministers</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="../Admin/pages/prayreq.php">
+                        <span class="nav-link-text ms-1">Add Prayer Request</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="../pages/rtl.html">
-                        <span class="nav-link-text ms-1">RTL</span>
+                    <a class="nav-link text-dark" href="../Admin/pages/contact.php">
+                        <span class="nav-link-text ms-1">Contact</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="../pages/notifications.html">
-                        <span class="nav-link-text ms-1">Notifications</span>
-                    </a>
-                </li>
-                <li class="nav-item mt-3">
-                    <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Account pages
-                    </h6>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="../pages/profile.html">
+                    <a class="nav-link text-dark" href="../Admin/pages/profile.php">
                         <span class="nav-link-text ms-1">Profile</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="../pages/sign-in.html">
-                        <span class="nav-link-text ms-1">Sign In</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="../pages/sign-up.html">
-                        <span class="nav-link-text ms-1">Sign Up</span>
                     </a>
                 </li>
             </ul>

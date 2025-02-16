@@ -7,7 +7,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-        <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+        <link rel="icon" type="image/png" href="../assets/img/logo.png">
         <title>
             Anointed Upper Room Church
         </title>
@@ -36,10 +36,10 @@
                 <i class="fas fa-times p-3 cursor-pointer text-dark opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
                     aria-hidden="true" id="iconSidenav"></i>
                 <a class="navbar-brand px-4 py-3 m-0"
-                    href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
-                    <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img" width="26" height="26"
+                    href="../index.php">
+                    <img src="../assets/img/logo.png" class="navbar-brand-img" width="26" height="26"
                         alt="main_logo">
-                    <span class="ms-1 text-sm text-dark">Creative Tim</span>
+                    <span class="ms-1 text-sm text-dark">AURC</span>
                 </a>
             </div>
             <hr class="horizontal dark mt-0 mb-2">
@@ -51,42 +51,33 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link bg-gradient-dark text-white" href="../pages/tables.php">
+                        <a class="nav-link text-dark" href="../pages/tables.php">
                             <span class="nav-link-text ms-1">Church Members</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="../pages/billing.php">
+                        <a class="nav-link text-dark" href="../pages/attendance.php">
                             <span class="nav-link-text ms-1">Attendance</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="../pages/virtual-reality.php">
-                            <span class="nav-link-text ms-1">Virtual Reality</span>
+                        <a class="nav-link text-dark" href="../pages/ministers.php">
+                            <span class="nav-link-text ms-1">Ministers</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="../pages/notifications.php">
-                            <span class="nav-link-text ms-1">Notifications</span>
+                        <a class="nav-link text-dark" href="../pages/prayreq.php">
+                            <span class="nav-link-text ms-1">Add Prayer Requests</span>
                         </a>
                     </li>
-                    <li class="nav-item mt-3">
-                        <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Account
-                            pages</h6>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="../pages/contact.php">
+                            <span class="nav-link-text ms-1">Contact</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="../pages/profile.php">
                             <span class="nav-link-text ms-1">Profile</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="../pages/sign-in.php">
-                            <span class="nav-link-text ms-1">Sign In</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="../pages/sign-up.php">
-                            <span class="nav-link-text ms-1">Sign Up</span>
                         </a>
                     </li>
                 </ul>

@@ -9,5 +9,12 @@
             "email": "hello@creative-tim.com"
         }
     ],
-    "require": {}
+    "require": {
+        "mailersend/mailersend": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
 }
